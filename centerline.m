@@ -1,5 +1,5 @@
 function out=centerline()
-
+% Initial File Although not used
 
 
 A=imread('retinal1.jpg');

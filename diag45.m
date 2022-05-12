@@ -1,12 +1,6 @@
 function [C bwC]=diag45(A)
 
-% aim: apply the diagonal DoOG filter, then search for the specific  
-%      combinations of signs in DoOG filtered image, then search for 
-%      the local maxima where ever the desired combination of signs is
-%      detected, mark the position of local maxima in a new image.
-% author: varun makkar
-% reference: mendonca_ieee
-% date: 23-02-2022
+
 
 filter=[0 0 -1 0 0 0 0;0 -2 0 -2 0 0 0;-1 0 -4 0 0 0 0;....
      0 -2 0 0 0 2 0;0 0 0 0 4 0 1;0 0 0 2 0 2 0;0 0 0 0 1 0 0];

@@ -1,4 +1,6 @@
 function out=test();
+% This is test file only for debugging purpose has no use in the the actual
+% implementation
 r=10;
 c=15;
 sz=randi([50,100],1,1);
@@ -17,6 +19,11 @@ end
 
 MI_v= mean(IS_v);
 
-stdI_v=std(IS_v)
-I_v=MI_v-stdI_v
-L_v=mean(LS_v)
+stdI_v=std(IS_v);
+I_v=MI_v-stdI_v;
+L_v=mean(LS_v);
+r=20;
+c=20;
+f=randn(r,c);
+[Pe,De]=PCA(f);
+
